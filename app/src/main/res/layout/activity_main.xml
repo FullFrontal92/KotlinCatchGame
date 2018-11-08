@@ -21,7 +21,7 @@
                 android:id="@+id/imageView"
                 app:layout_column="0"
                 app:layout_row="0"
-        />
+                android:onClick="increaseScore"/>
 
         <ImageView
                 android:layout_width="120dp"
@@ -30,6 +30,7 @@
                 android:id="@+id/imageView2"
                 app:layout_column="1"
                 app:layout_row="0"
+                android:onClick="increaseScore"
         />
 
         <ImageView
@@ -39,6 +40,7 @@
                 android:id="@+id/imageView3"
                 app:layout_column="2"
                 app:layout_row="0"
+                android:onClick="increaseScore"
         />
 
         <ImageView
@@ -48,6 +50,7 @@
                 android:id="@+id/imageView4"
                 app:layout_column="0"
                 app:layout_row="1"
+                android:onClick="increaseScore"
         />
 
         <ImageView
@@ -57,6 +60,7 @@
                 android:id="@+id/imageView5"
                 app:layout_column="1"
                 app:layout_row="1"
+                android:onClick="increaseScore"
         />
 
         <ImageView
@@ -66,6 +70,7 @@
                 android:id="@+id/imageView6"
                 app:layout_column="2"
                 app:layout_row="1"
+                android:onClick="increaseScore"
         />
 
         <ImageView
@@ -75,6 +80,7 @@
                 android:id="@+id/imageView7"
                 app:layout_column="0"
                 app:layout_row="2"
+                android:onClick="increaseScore"
         />
 
         <ImageView
@@ -84,6 +90,7 @@
                 android:id="@+id/imageView8"
                 app:layout_column="1"
                 app:layout_row="2"
+                android:onClick="increaseScore"
         />
 
         <ImageView
@@ -93,6 +100,7 @@
                 android:id="@+id/imageView9"
                 app:layout_column="2"
                 app:layout_row="2"
+                android:onClick="increaseScore"
         />
     </android.support.v7.widget.GridLayout>
     <TextView
@@ -102,13 +110,13 @@
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
             android:textAlignment="center" android:textSize="24sp" android:layout_marginTop="8dp"
             app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toTopOf="@+id/gridLayout"/>
+            app:layout_constraintBottom_toTopOf="@+id/gridLayout" android:id="@+id/timeText"/>
     <TextView
             android:text="Score: 0"
             android:layout_width="95dp"
             android:layout_height="37dp"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            android:id="@+id/textView2" android:textSize="24sp" android:textAlignment="center"
+            android:id="@+id/scoreText" android:textSize="24sp" android:textAlignment="center"
             android:layout_marginBottom="28dp" app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.501" android:layout_marginTop="8dp"
             app:layout_constraintTop_toBottomOf="@+id/gridLayout"/>
